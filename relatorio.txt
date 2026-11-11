@@ -1,10 +1,20 @@
-
 MEU ESTOQUE
-Produto: Feijo 1 Kg
+
+Produto: Feijao
 Preço de compra: R$ 6.80
 Preço de venda: R$ 9.50
 Quantidade: 8
-Valor total do estoque: R$ 54.40
-Lucro por unidade: R$ 2.70
+Valor do estoque: R$ 54.40
+Lucro por unidade: R$2.70
 Lucro total: R$ 21.60
 Faturamento total: R$ 76.00
+
+Produto: Arroz
+Preço de compra: R$ 20.00
+Preço de venda: R$ 28.00
+Quantidade: 5
+Valor do estoque: R$ 100.00
+Lucro por unidade: R$8.00
+Lucro total: R$ 40.00
+Faturamento total: R$ 140.00
+
