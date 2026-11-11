@@ -39,7 +39,15 @@ produtos.push({
 continuar = prompt("Deseja cadastrar outro produto? (sim/não) ");
 }
 let relatorio = "MEU ESTOQUE\n\n";
+let totalEstoque = 0;
+let totalLucro = 0;
+let totalFaturamento = 0;
 for (let produto of produtos) {
+    totalEstoque += produto.precoCompra * produto.quantidade;
+
+totalLucro += (produto.precoVenda - produto.precoCompra) * produto.quantidade;
+
+totalFaturamento += produto.precoVenda * produto.quantidade;
 relatorio += "Produto: " + produto.nome + "\n";
 relatorio += "Preço de compra: R$ " + produto.precoCompra.toFixed(2) + "\n";
 relatorio += "Preço de venda: R$ " + produto.precoVenda.toFixed(2) + "\n";
@@ -49,6 +57,10 @@ relatorio += "Lucro por unidade: R$" + (produto.precoVenda - produto.precoCompra
 relatorio += "Lucro total: R$ " + ((produto.precoVenda - produto.precoCompra) * produto.quantidade).toFixed(2) + "\n";
 relatorio += "Faturamento total: R$ " + (produto.precoVenda * produto.quantidade).toFixed(2) + "\n\n";
 }
+relatorio += "----- RESUMO GERAL DO ESTOQUE -----\n";
+relatorio += "Valor total investido: R$ " + totalEstoque.toFixed(2) + "\n";
+relatorio += "Lucro total potencial: R$ " + totalLucro.toFixed(2) + "\n";
+relatorio += "Faturamento potencial: R$ " + totalFaturamento.toFixed(2) + "\n";
 fs.writeFileSync("relatorio.txt", relatorio);
 console.log("Relatório salvo com sucesso!");
 console.log(produtos);

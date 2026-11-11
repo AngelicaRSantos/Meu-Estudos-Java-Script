@@ -18,3 +18,7 @@ Lucro por unidade: R$8.00
 Lucro total: R$ 40.00
 Faturamento total: R$ 140.00
 
+----- RESUMO GERAL DO ESTOQUE -----
+Valor total investido: R$ 154.40
+Lucro total potencial: R$ 61.60
+Faturamento potencial: R$ 216.00
